@@ -1,0 +1,7 @@
+AAPL
+GOOGL
+MS
+JNJ
+HD
+COP
+FDX

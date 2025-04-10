@@ -1,0 +1,251 @@
+/* Dashboard Container */
+.dashboard-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logout-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #b02a37;
+}
+
+/* Loading Spinner */
+.loading-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Investment Advice */
+.investment-advice {
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.investment-advice h2 {
+  color: #007bff;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+}
+
+/* Market Mood */
+.market-mood {
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.market-mood h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.market-mood p {
+  font-size: 16px;
+  color: #495057;
+}
+
+.market-mood-img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  margin-top: 15px;
+  transition: transform 0.3s ease;
+}
+
+.market-mood-img:hover {
+  transform: scale(1.05);
+}
+
+/* Financial News */
+.financial-news {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.financial-news h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #343a40;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+}
+
+.news-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.news-list li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.news-list li a:hover {
+  color: #0056b3;
+}
+
+/* Sentiment Colors */
+.text-green {
+  color: #28a745;
+}
+
+.text-red {
+  color: #dc3545;
+}
+
+.text-yellow {
+  color: #ffc107;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 15px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logout-btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .market-mood-img {
+    max-width: 100%;
+  }
+  
+  
+}
+
+.predict-btn {
+  background-color: #0077cc;
+  color: white;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.predict-btn:hover {
+  background-color: #005fa3;
+}
+.prediction-output {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+.stock-plot {
+  margin-top: 10px;
+}
+
+.error-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.error-table th, .error-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+.error-table th {
+  background-color: #f5f5f5;
+}
+.metrics-box {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-family: monospace;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  white-space: pre-wrap;
+}
+
+.portfolio-results ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.portfolio-results li {
+  padding: 5px 0;
+  font-weight: 500;
+}
+
+.portfolio-results p {
+  margin: 6px 0;
+}
+
